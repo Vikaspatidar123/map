@@ -1,0 +1,49 @@
+{
+  "name": "@cogoport/product-maps",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "NODE_ENV=production next build",
+    "dev": "next dev -p 3002",
+    "lint": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "start": "next start -p 4200"
+  },
+  "dependencies": {
+    "@cogoport/components": "^1.0.388",
+    "@cogoport/eslint-config": "^1.1.0",
+    "@cogoport/icons-react": "^1.0.61",
+    "@cogoport/maps": "^1.0.3",
+    "@cogoport/stylelint-config": "^1.0.3",
+    "@cogoport/utils": "^1.2.2",
+    "@reduxjs/toolkit": "^1.9.3",
+    "axios": "^1.3.1",
+    "axios-hooks": "^4.0.0",
+    "immutability-helper": "^3.1.1",
+    "leaflet-fullscreen": "^1.0.2",
+    "leaflet-gesture-handling": "^1.2.2",
+    "leaflet.markercluster": "^1.5.3",
+    "next": "12.3.1",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "qs": "^6.11.0",
+    "react": "18.2.0",
+    "react-cookie-consent": "^8.0.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dnd-touch-backend": "^16.0.1",
+    "react-dom": "18.2.0",
+    "react-gtm-consent-module": "^1.0.1",
+    "react-hook-form": "^7.43.3",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^8.0.5",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.1",
+    "postcss": "^8.4.16",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.8.2"
+  }
+}

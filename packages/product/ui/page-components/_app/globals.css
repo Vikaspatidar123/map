@@ -1,0 +1,92 @@
+/* stylelint-disable selector-class-pattern */
+@import "~normalize.css/normalize.css";
+/* stylelint-disable-next-line import-notation */
+
+@custom-media --breakpoint-mobile (max-width: 576px);
+@custom-media --breakpoint-tablet (max-width: 992px);
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Poppins, sans-serif;
+}
+
+:root {
+	--color-service-ocean: #1867d2;
+	--color-service-land: #136f29;
+	--color-service-air: #f37166;
+	--color-service-haulage: #8b0000;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.leaflet-control-zoom > a {
+	font-weight: 500 !important;
+}
+
+.leaflet-control-layers-base label > span {
+	font-size: 0.7rem !important;
+}
+
+.leaflet-touch .leaflet-control-fullscreen a {
+	background-position: 2px 2px !important;
+}
+
+.leaflet-touch.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+	background-position: 2px -24px !important;
+}
+
+#nprogress {
+	position: relative;
+	z-index: 9999999;
+}
+
+#nprogress .bar {
+	background: #ee3425 !important;
+}
+
+#nprogress .peg {
+	box-shadow: 0 0 10px #ee3425, 0 0 5px #ee3425 !important;
+}
+
+#nprogress .spinner-icon {
+	border-top-color: #ee3425 !important;
+	border-left-color: #ee3425 !important;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.leaflet-container {
+	cursor: default !important;
+	background-color: #ccd6db !important;
+}
+
+.leaflet-tile {
+	filter: hue-rotate(45deg) !important;
+}
+
+/* .leaflet-tile {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7) !important;
+}  */
+
+.arrow-icon {
+	width: 4px;
+	height: 4px;
+}
+
+.arrow-icon > div {
+	margin-top: -3px;
+	margin-left: -1px;
+	font: 12px/1.5;
+	transform-origin: center center;
+}
+
+.ui_modal_dialog,
+.ui_toast_dialog {
+	max-width: 96vw;
+}

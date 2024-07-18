@@ -1,0 +1,49 @@
+.container {
+	margin-top: 56px;
+
+	:global {
+		.marker_label {
+			display: flex !important;
+			align-items: center;
+			justify-content: center;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0 0 4px #051c3d33;
+		}
+
+		.node_type_text {
+			display: none;
+		}
+
+		.ocean {
+			svg {
+				fill: var(--color-service-ocean);
+			}
+		}
+
+		.air {
+			svg {
+				fill: var(--color-service-air);
+			}
+		}
+
+		.land,
+		.road {
+			svg {
+				fill: var(--color-service-land);
+			}
+		}
+
+		.haulage {
+			svg {
+				fill: var(--color-service-land);
+			}
+		}
+
+		.flip_icon {
+			svg {
+				transform: scale(-1, 1);
+			}
+		}
+	} 
+}

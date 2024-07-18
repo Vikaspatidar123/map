@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	background-color: #fafafa;
+	border-radius: 8px;
+
+	.down {
+		margin-top: -1px;
+	}
+
+	.up {
+		margin-bottom: -1px;
+	}
+
+	.ocean {
+		stroke: var(--color-service-ocean);
+	}
+}

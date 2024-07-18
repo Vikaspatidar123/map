@@ -1,0 +1,38 @@
+.container {
+	--width-side-panel: 380px;
+
+	position: absolute;
+	right: 48px;
+	bottom: 24px;
+	z-index: 1001;
+	width: var(--width-side-panel);
+	height: calc(100vh - 90px);
+	overflow: auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 8px #0000002c;
+
+	&.hide {
+		left: calc(-1 * var(--width-side-panel));
+	}
+}
+
+.heading_text {
+	padding: 20px 24px 4px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	text-align: center;
+	background-color: #fff;
+}
+
+.loader_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+
+.pagination {
+	padding: 12px 24px 16px;
+}

@@ -1,0 +1,131 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	padding: 16px;
+
+	:global {
+		.ui_pagination_comp_container {
+			justify-content: flex-end;
+			padding: 4px 8px;
+		}
+	}
+}
+
+.card {
+	position: relative;
+	max-height: fit-content;
+	padding: 12px 12px 0;
+	background-repeat: no-repeat;
+	background-position: top 4px right;
+	background-size: auto 36px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+	transition: all 250ms ease;
+
+	&.active_card {
+		max-height: 1000px;
+		overflow: auto;
+		border: 1px solid #edd7a9;
+		box-shadow: 0 0 8px #627fac33;
+		transition: all 250ms ease;
+	}
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 0 5px rgb(0 0 0 / 15%);
+	}
+
+	&:last-of-type {
+		margin-bottom: 12px;
+	}
+}
+
+.location_text {
+	font-weight: 500;
+}
+
+.circle {
+	width: 24px;
+	height: 24px;
+}
+
+.large_circle {
+	width: 36px;
+	height: 36px;
+}
+
+.loader_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+
+	:global {
+		.ui_loader {
+			padding: 2px;
+			scale: 1.8;
+		}
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 8px;
+
+	h3 {
+		font-weight: 600;
+	}
+
+	svg {
+		margin-right: 8px;
+		fill: #828282;
+
+		&:hover {
+			fill: #ee3425;
+		}
+	}
+}
+
+.loader {
+	margin: 0 -6px 0 0;
+}
+
+.logo_icon {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-size: 30px 30px;
+	border: 1px solid #828282;
+	border-radius: 8px;
+	transition: all 150ms ease;
+}
+
+.flex_container {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.vessel_container {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	font-weight: 500;
+}
+
+.vessel_icon {
+	width: 36px;
+	height: 36px;
+	fill: #42b0d5 !important;
+}
+
+.vessel_schedules_button {
+	float: right;
+	margin-bottom: 10px;
+}

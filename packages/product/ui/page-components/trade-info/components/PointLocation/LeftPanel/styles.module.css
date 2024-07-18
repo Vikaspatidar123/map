@@ -1,0 +1,75 @@
+.container {
+	position: absolute;
+	top: 0;
+	left: calc(-1 * var(--service-side-panel));
+	z-index: 1002;
+	width: var(--service-side-panel);
+	height: calc(100vh - 56px);
+	overflow-y: auto;
+	background-color: #fff;
+	box-shadow: 0 0 8px #627fac33;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	@media (max-width: 480px) {
+		--service-side-panel: 100vw;
+	}
+}
+
+.visible {
+	left: 0;
+}
+
+.bg {
+	width: var(--service-side-panel);
+	height: 224px;
+	background-image: url("https://cogoport-testing.sgp1.digitaloceanspaces.com/89811b7ae084abacd59756b0c5ab317d/timelab-yx20mpDyr2I-unsplash-min%20%281%29%20%284%29.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.toggle_icon {
+	position: absolute;
+	top: 45vh;
+	left: var(--service-side-panel);
+	z-index: 1004;
+	display: flex;
+	align-items: center;
+	padding: 16px 4px 16px 2px;
+	clip-path: inset(-8px -8px -8px 0);
+	background-color: #f8f2e7;
+	border: none;
+	border-radius: 0 12px 12px 0;
+	box-shadow: 0 0 8px #627fac33;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transform: translateY(-50%);
+
+	svg {
+		font-size: 18px;
+		transform: scaleY(1.1);
+	}
+
+	&.rotate_toggle {
+		left: 0;
+	}
+
+	&.rotate_toggle svg {
+		transition: rotate 0.25s ease;
+		transform: rotate(180deg);
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	@media (max-width: 480px) {
+		left: calc(100vw - 24px);
+		clip-path: inset(-8px 0 -8px -8px);
+		border-radius: 12px 0 0 12px;
+
+		&.rotate_toggle {
+			clip-path: inset(-8px -8px -8px 0);
+			border-radius: 0 12px 12px 0;
+		}
+	}
+}

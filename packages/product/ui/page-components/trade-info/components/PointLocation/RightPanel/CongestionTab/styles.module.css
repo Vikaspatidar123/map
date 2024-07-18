@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	background-image: url("https://cogoport-testing.sgp1.digitaloceanspaces.com/158bab1b368e6a2b4082a4aeeea3dda8/Globe.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	animation: move-image 10s linear infinite;
+
+	svg {
+		height: 100px;
+	}
+}
+
+@keyframes move-image {
+	0% {
+		background-position: 50% 0%;
+	}
+
+	25% {
+		background-position: 100% 50%;
+	}
+
+	50% {
+		background-position: 50% 100%;
+	}
+
+	75% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 50% 0%;
+	}
+}

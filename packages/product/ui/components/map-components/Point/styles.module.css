@@ -1,0 +1,58 @@
+.point_animation {
+	--border-pulse-color: var(--color-service-land);
+
+	width: 12px;
+	height: 12px;
+	background: var(--color-service-land);
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 2px #333333cc;
+	transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+	animation: border-pulse 2s infinite;
+
+	&.ocean,
+	&.shipping_lines,
+	&.seaport {
+		background: var(--color-service-ocean);
+
+		--border-pulse-color: var(--color-service-ocean);
+	}
+
+	&.air_lines,
+	&.air,
+	&.airport {
+		background: var(--color-service-air);
+
+		--border-pulse-color: var(--color-service-air);
+	}
+
+	&.default {
+		background: #211f20e6;
+
+		--border-pulse-color: #f18118;
+	}
+
+	&.hide_animation {
+		animation: none;
+	}
+
+	animation-name: border-pulse;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes border-pulse {
+	0% {
+		box-shadow: 0 0 0 0 var(--border-pulse-color);
+	}
+
+	70% {
+		/* stylelint-disable-next-line color-hex-length */
+		box-shadow: 0 0 0 10px #ff000000;
+	}
+
+	100% {
+		/* stylelint-disable-next-line color-hex-length */
+		box-shadow: 0 0 0 0 #ff000000;
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "include": [
+    "src/**/*",
+    "src/config.json",
+    "rollup.config.js",
+    "webpack.config.js",
+    "postcss.config.js",
+    ".eslintrc.js",
+    ".stylelintrc.js"
+  ],
+  "exclude": ["dist"],
+  "compilerOptions": {
+      // "plugins": [{ "name": "typescript-plugin-css-modules" }],
+      "target": "ES2020", 
+      "typeRoots": ["node_modules/@types"],
+      // "lib": [],
+      "jsx": "react",
+      "module": "ES2020",
+      "moduleResolution": "Node",
+      // "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+
+      /* Type Checking */
+      "strict": true,
+      "noImplicitAny": true
+    }
+}

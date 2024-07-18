@@ -1,0 +1,72 @@
+.wrapper {
+	position: relative;
+
+	:global {
+		.ui_select_option_item {
+			position: relative;
+		}
+
+		.ui_select_input_control {
+			.hide_later {
+				display: none;
+			}
+
+			.search_label_heading_text {
+				margin: 0;
+			}
+		}
+
+		.ui_select_container {
+			min-width: 19.2rem;
+
+			@media (max-width: 420px) {
+				min-width: 75vw;
+			}
+		}
+	}
+
+	&.active {
+		:global {
+			.ui_select_display_container {
+				border: 1px solid #88cad1;
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+}
+
+.gradient_border {
+	--border-width: 2px;
+
+	background: #1d1f20;
+	border-radius: 12px;
+}
+
+.gradient_border::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: calc(100% + var(--border-width));
+	content: "";
+	/* stylelint-disable-next-line max-line-length */
+	background-image: linear-gradient(45deg, #89cad1 0%, #598c91 13%, #65999f 24%, #6ea5ab 33%, #a9a7a9 42%, #d5acaa 50%, #f8b1aa 57%, #d5acaa 64%, #a9a7a9 71%, #6ea4aa 78%, #79b2b9 85%, #81bec5 93%, #89cad1 100%);
+	background-size: 300% 300%;
+	border-radius: calc(3 * var(--border-width));
+	animation: animatedgradient 5s linear infinite;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}

@@ -1,0 +1,176 @@
+.hide {
+	color: #c7c7c7;
+	transition: color 250ms ease;
+}
+
+.container {
+	display: flex;
+	gap: 12px;
+	padding: 16px 0;
+
+	&.service_container {
+		padding: 8px 0;
+
+		.hidden {
+			border: 1px solid #c7c7c7;
+
+			.service_icon {
+				fill: #c7c7c7;
+			}
+		}
+
+		&:hover {
+			.editable {
+				cursor: pointer;
+				border: 1px solid #ee3425;
+
+				.cross_icon,
+				.plus_icon {
+					transition: transform 450ms cubic-bezier(0.165, 0.84, 0.44, 1);
+					transform: translateX(0);
+				}
+
+				&.hidden {
+					border: 1px solid green;
+
+					.plus_icon {
+						transform: rotate(135deg);
+					}
+				}
+			}
+
+			.hide {
+				color: #828282;
+			}
+		}
+	}
+}
+
+.primary {
+	border-left: 0.1rem solid;
+}
+
+.seaport,
+.ocean {
+	border-color: var(--color-service-ocean);
+}
+
+.airport,
+.air {
+	border-color: #f7aba3;
+}
+
+.land {
+	border-color: var(--color-service-land);
+}
+
+.haulage {
+	border-color: var(--color-service-haulage);
+}
+
+.secondary {
+	border-left: 1px dashed #4f4f4f;
+}
+
+.vertical_line {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 35px;
+
+	svg {
+		z-index: 2;
+		width: 36px;
+		height: 36px;
+		padding: 8px;
+		background-color: #fff;
+		border-radius: 50%;
+		fill: #4f4f4f;
+	}
+}
+
+.icon_wrapper svg {
+	border: 1px solid var(--color-service-land);
+}
+
+.icon_wrapper {
+	:global {
+		.global_icons_type_icd {
+			width: 36px;
+			height: 36px;
+			border: 1px solid var(--color-service-ocean);
+		}
+	}
+}
+
+.icon_airport svg {
+	border-color: #f7aba3;
+}
+
+.icon_seaport svg {
+	border-color: var(--color-service-ocean);
+}
+
+.header {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.small_text {
+	display: inline;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.btn_wrapper {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.service_btn {
+	position: relative;
+	z-index: 2;
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #4f4f4f;
+	border-radius: 50%;
+
+	svg {
+		position: absolute;
+		top: 0;
+		display: block;
+		width: 24px;
+		height: 24px;
+		padding: 4px;
+		border: none;
+		transition: transform 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+	&.editable {
+		/* stylelint-disable-next-line no-descending-specificity */
+		.cross_icon {
+			fill: #ee3425;
+			transition: transform 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transform: translateY(-24px);
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity */
+		.plus_icon {
+			fill: green;
+			transition: transform 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transform: translateY(-24px);
+		}
+	}
+}
+
+.service_line {
+	transform: translateY(24px);
+}
+
+.service {
+	margin: 4px 0 6px;
+}

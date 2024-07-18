@@ -1,0 +1,150 @@
+{
+	"open_body_14tyre_taurus_25ft_26ton":{
+		"type":"Open",
+		"label":"14 tyre | Taurus | (25 ft) (26 ton)"
+	},
+
+	"open_body_12tyre_taurus_24ft_25ton": {
+		"type": "Open",
+		"label":"12 tyre | Taurus | (24 ft) | (25 ton)"
+	},
+	"open_body_14tyre_30ton": {
+		"type":"Open",
+		"label":"14 tyre | (30 ton)"
+	},
+	"open_body_pickup_1ton":
+	{
+		"type": "Open",
+		"label": "Pickup | (1 ton)"
+	},
+	"open_body_tata_ace_750_800kgs":
+	{
+		"type": "Open",
+		"label": "Tata Ace | (750-800 kgs)"
+	},
+	"open_body_tata_407_2.5ton":
+	{
+		"type": "Open",
+		"label": "Tata 407 | (2.5 ton)"
+	},
+	"open_body_LCV_14ft_4ton":
+	{
+		"type": "Open",
+		"label": "LCV (14ft) | (4 ton)"
+	},
+	"open_body_LCV_17ft_5ton":
+	{
+		"type": "Open",
+		"label": "LCV (17 ft) (5 ton)"
+	},
+	"open_body_LCV_19ft_7ton":
+	{
+		"type": "Open",
+		"label": "LCV (19ft) (7 ton)"
+	},
+	"open_body_6tyre_19_24ft_9ton":
+	{
+		"type": "Open",
+		"label": "6 tyre (19-24 ft) (9 ton)"
+	},
+	"open_body_10tyre_taurus_22ft_16ton":
+	{
+		"type": "Open",
+		"label": "10 tyre Taurus 22ft (16 ton)"
+	},
+	"open_body_12tyre_taurus_22ft_22ton":
+	{
+		"type": "Open",
+		"label": "12 tyre Taurus 22 ft (22 ton)"
+	},
+	"open_body_14tyre_taurus_22ft_26ton":
+	{
+		"type": "Open",
+		"label": "14 tyre Taurus 22ft (26 ton)"
+	},
+	"open_body_18tyre_28ton":
+	{
+		"type": "Open",
+		"label": "18 tyre (28 ton)"
+	},
+	"open_body_22tyre_35ton":
+	{
+		"type": "Open",
+		"label": "22 tyre (35 ton)"
+	},
+	"open_40ft_flat_bed_trailor_20_25ton":
+	{
+		"type": "Open",
+		"label": "40ft Flat Bed Trailor (20-25 ton)"
+	},
+	"open_40ft_semi_low_bed_trailor_20_25ton":
+	{
+		"type": "Open",
+		"label": "40ft Semi Low Bed Trailor (20-25 ton)"
+	},
+	"open_40ft_low_bed_trailor_20_25_30ton":
+	{
+		"type": "Open",
+		"label": "40ft Low Bed Trailor (20-25-30 ton)"
+	},
+	"closed_body_LCV_14ft_3.5ton":
+	{
+		"type": "Closed",
+		"label": "LCV (14ft) (3.5 ton)"
+	},
+	"closed_body_LCV_17ft_5ton":
+	{
+		"type": "Closed",
+		"label": "LCV (17 ft) (5 ton)"
+	},
+	"closed_body_LCV_19ft_7ton":
+	{
+		"type": "Closed",
+		"label": "LCV (19ft) (7 ton)"
+	},
+	"closed_body_32ft_single_axle_7ton":
+	{
+		"type": "Closed",
+		"label": "32ft | Single axle | (7 ton)"
+	},
+	"closed_body_32ft_single_axle_HQ_7ton":
+	{
+		"type": "Closed",
+		"label": "32 ft | Single axle | HQ (7 ton)"
+	},
+	"closed_body_19_22ft_single_axle_7ton":
+	{
+		"type": "Closed",
+		"label": "19-22 ft | Single axle | (7 ton)"
+	},
+	"closed_body_24ft_single_axle_7ton":
+	{
+		"type": "Closed",
+		"label": "24 ft | Single axle | (7 ton)"
+	},
+	"closed_body_24ft_multi_axle_14_15_ton":
+	{
+		"type": "Closed",
+		"label": "24 ft | Single axle | (7 ton)"
+	},
+	"closed_body_32ft_multi_axle_HQ_14_15_ton":
+	{
+		"type": "Closed",
+		"label": "32 ft | Multi axle | HQ (14-15 ton)"
+	},
+	"closed_body_32ft_multi_axle_14_15_ton":
+	{
+		"type": "Closed",
+		"label": "32ft | Multi axle | (14-15 ton)"
+	},
+	"closed_body_32ft_triple_axle_20_21_ton":
+	{
+		"type": "Closed",
+		"label": "32ft | Triple axle | (20-21 ton)"
+	},
+	"closed_body_32ft_triple_axle_HQ_20_21_ton":
+	{
+		"type": "Closed",
+		"label": "32 ft | Triple axle | HQ | (20-21 ton)"
+	}
+}

@@ -1,0 +1,97 @@
+.container {
+	padding: 0 16px;
+
+	h4 {
+		font-weight: 600;
+	}
+}
+
+.vertical_line {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 2px;
+}
+
+.line {
+	position: absolute;
+	top: 0;
+	height: calc(100% + 16px);
+	border-left: 1.5px solid #136f29;
+	transform: translateY(24px);
+
+	span {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.circle {
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	padding: 6px;
+	font-size: 10px;
+	background-color: #fff;
+	border: 1.5px solid #136f29;
+	border-radius: 50%;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+
+	p {
+		font-size: 10px;
+	}
+
+	&.first_card {
+		margin-top: 16px;
+	}
+}
+
+.shipping_lines,
+.ocean {
+	color: #1867d2;
+	border-color: #1867d2;
+}
+
+.air_lines,
+.air {
+	color: #f37166;
+	border-color: #f37166;
+}
+
+.heading {
+	padding: 12px 8px 8px;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.text_container {
+	width: calc(100% - 48px);
+}
+
+.vessels_container {
+	display: flex;
+	row-gap: 8px;
+	column-gap: 16px;
+	align-items: center;
+	justify-content: flex-start;
+
+	p {
+		font-size: 12px;
+	}
+
+	span {
+		padding-right: 3px;
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,13 @@
+.horizontal_line {
+	width: calc(100% + 32px);
+	margin-left: -16px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+	padding: 4px 16px;
+}
+
+div.horizontal_line:last-of-type {
+	display: none;
+}

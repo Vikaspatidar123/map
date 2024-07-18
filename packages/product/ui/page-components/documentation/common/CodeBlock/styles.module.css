@@ -1,0 +1,18 @@
+.container {
+	display: block;
+
+	@media (max-width: 576px) {
+		width: 100%;
+	}
+}
+
+.heading_container {
+	padding: 5px 10px;
+	background-color: #333;
+}
+
+.heading_text {
+	margin: 0;
+	font-size: 12px;
+	color: #999;
+}

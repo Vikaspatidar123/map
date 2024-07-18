@@ -1,0 +1,54 @@
+.price_container {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000;
+	text-align: right;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 8px 0;
+}
+
+.container {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+}
+
+.label {
+	max-width: 280px;
+	margin: 0;
+	overflow: hidden;
+	font-size: 12px;
+	appearance: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.content {
+	width: max-content;
+	padding: 0;
+	margin: -4px;
+	font-size: 12px;
+}
+
+.validity::before {
+	font-weight: 500;
+	content: "Validity : ";
+}
+
+.logo {
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 28px 28px;
+	border: 1px solid #ed1c24;
+	border-radius: 50%;
+}

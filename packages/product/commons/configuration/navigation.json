@@ -1,0 +1,33 @@
+[
+	{
+		"label": "Shipment Planner",
+		"href": "/",
+		"as": "/",
+		"type": "link"
+	},
+	
+	{
+		"label": "Global Routes",
+		"href": "/global-routes",
+		"as": "/global-routes",
+		"type": "link"
+	},
+	{
+		"label": "Trade Info",
+		"href": "/trade-info",
+		"as": "/trade-info",
+		"type": "link"
+	},
+	{
+		"label": "Vessel Info",
+		"href": "/vessel-information",
+		"as": "/vessel-information",
+		"type": "link"
+	},
+	{
+		"label": "Developers",
+		"href": "/documentation/getting-started",
+		"as": "/documentation/getting-started",
+		"type": "link"
+	}
+]

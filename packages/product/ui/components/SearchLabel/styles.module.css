@@ -1,0 +1,59 @@
+.container {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	width: 100%;
+}
+
+.icon_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	height: 100%;
+
+	svg {
+		width: 16px;
+	}
+}
+
+.description {
+	margin: 0;
+	font-size: 10px;
+}
+
+.main_heading {
+	max-width: 200px;
+	margin-bottom: 4px;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: 500;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.code {
+	position: absolute;
+	top: 9px;
+	right: 8px;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.type {
+	position: absolute;
+	right: 6px;
+	bottom: 4px;
+	font-size: 8px;
+}
+
+.trending {
+	position: absolute;
+	top: 23px;
+	right: 16px;
+}
+
+.trending img {
+	transform: rotate(5deg);
+}

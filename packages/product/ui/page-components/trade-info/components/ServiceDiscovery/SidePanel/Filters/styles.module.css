@@ -1,0 +1,32 @@
+.filter_container {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	background-color: #fff;
+}
+
+.tab {
+	width: 36px;
+	height: 36px;
+	margin-top: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #828282;
+	background-color: #fafafa;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+
+	&:hover {
+		color: #ee3425;
+		cursor: pointer;
+	}
+
+	&.active {
+		color: #ee3425;
+		background-color: #fff;
+		border: 1px solid #ee3425;
+	}
+}

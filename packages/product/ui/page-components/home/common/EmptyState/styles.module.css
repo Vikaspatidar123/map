@@ -1,0 +1,13 @@
+.container {
+	padding: 64px 32px;
+}
+
+.header {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.description {
+	font-size: 12px;
+	font-weight: 400;
+}

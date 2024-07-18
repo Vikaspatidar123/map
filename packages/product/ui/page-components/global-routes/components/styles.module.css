@@ -1,0 +1,12 @@
+.container {
+	--layout-side-panel: 408px;
+
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 56px;
+}
+
+.map {
+	width: calc(100vw);
+}

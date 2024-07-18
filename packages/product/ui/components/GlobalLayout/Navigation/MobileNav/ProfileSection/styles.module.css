@@ -1,0 +1,23 @@
+.profile_div {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	padding: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #e0e0e0;
+
+	svg {
+		font-size: 16px;
+		transition: transform 350ms ease;
+	}
+
+	h4 {
+		margin-left: 8px;
+		font-weight: 500;
+	}
+}
+
+.login_text {
+	background-color: #fff;
+	border: none;
+}

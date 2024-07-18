@@ -1,0 +1,39 @@
+.label_text {
+	margin-bottom: 4px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.error_text {
+	margin: 2px 0 0;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #ed1c24;
+	visibility: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 12px 0;
+
+	&.error {
+		.label_text {
+			color: #ed1c24;
+		}
+
+		:global {
+			.ui_input_container,
+			.ui_select_display_container {
+				border: 1px solid #ed1c24;
+			}
+		}
+
+		.error_text {
+			visibility: visible;
+		}
+	}
+}

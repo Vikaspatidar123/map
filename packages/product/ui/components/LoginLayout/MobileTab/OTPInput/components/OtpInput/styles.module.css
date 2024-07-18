@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	width: 323px;
+	justify-content: center;
+}
+
+.input_item {
+	flex-grow: 1;
+	width: 40px;
+	& input {
+		text-align: center;
+	}
+}

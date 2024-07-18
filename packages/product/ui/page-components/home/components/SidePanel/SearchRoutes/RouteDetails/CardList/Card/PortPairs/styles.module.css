@@ -1,0 +1,58 @@
+.location_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+	p {
+		margin: 0;
+	}
+}
+
+.loc_box {
+	display: flex;
+	flex-direction: column;
+	width: 42%;
+}
+
+.name {
+	max-width: 135px;
+	overflow: hidden;
+	font-size: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.divider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10%;
+
+	svg {
+		fill: #4f4f4f;
+	}
+}
+
+.line {
+	width: 20px;
+	border-bottom: 1px solid #4d4d4d;
+	transform: translateX(9px);
+}
+
+div.loc_box:last-of-type {
+	align-items: flex-end;
+
+	p {
+		text-align: right;
+	}
+}
+
+.content {
+	width: fit-content;
+	font-size: 12px;
+}
+
+.port_code {
+	font-weight: 500;
+}

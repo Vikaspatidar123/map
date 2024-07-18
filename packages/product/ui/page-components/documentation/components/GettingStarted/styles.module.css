@@ -1,0 +1,24 @@
+.section_container {
+	margin-bottom: 48px;
+	scroll-margin-top: 64px;
+
+	:global {
+		.ui_tab_list_container {
+			margin-bottom: 24px;
+
+			button {
+				padding: 12px 16px;
+				border-radius: 4px 4px 0 0;
+
+				&:hover {
+					background-color: #fdebe9;
+				}
+			}
+		}
+	}
+}
+
+.styled_link {
+	margin-left: 8px;
+	color: #d51d10;
+}

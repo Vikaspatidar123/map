@@ -1,0 +1,59 @@
+.mobile_number_select {
+	display: flex;
+	border: 1px solid #dedede;
+	border-radius: 6px;
+
+	:global {
+		.ui_select_options_container {
+			width: 180px;
+			padding: 8px 0;
+		}
+
+		.ui_select_display_container {
+			border: none;
+			border-radius: 4px 0 0 4px;
+		}
+
+		.ui_select_display_container div:nth-of-type(2) {
+			padding-right: 8px;
+		}
+
+		.ui_input_container {
+			border: none;
+			border-radius: 0 4px 4px 0;
+		}
+
+		.ui_select_toggle_button {
+			padding: 8px;
+		}
+	}
+
+	&:hover,
+	&:focus-within {
+		border: 1px solid #88cad1;
+	}
+}
+
+.horizontal_line {
+	height: 40px;
+	border-right: 1px solid #e8e8e8;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 0;
+}
+
+.label_text {
+	margin-bottom: 4px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #4f4f4f;
+}
+
+.error_text {
+	font-size: 10px !important;
+	color: #ee3425;
+}

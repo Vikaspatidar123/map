@@ -1,0 +1,43 @@
+.legend {
+	position: absolute;
+	bottom: 2rem;
+	left: 2px;
+	z-index: 999;
+	border-radius: 4px;
+}
+
+.loader {
+	position: absolute;
+	top: 0.5rem;
+	left: 4px;
+	z-index: 999;
+}
+
+.tooltip {
+	display: flex;
+	justify-content: center;
+	min-width: 160px;
+	white-space: normal;
+}
+
+.btn_icon {
+	position: absolute;
+	top: 76px;
+	right: 10px;
+	z-index: 999;
+	width: 30px;
+	min-width: auto !important;
+	height: 30px !important;
+	background-image: url("https://cogoport-testing.sgp1.digitaloceanspaces.com/66b48bed5fbd77112dec3c6c0d7861e8/disable.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px 16px;
+
+	&.disable {
+		background-image: url("https://cogoport-testing.sgp1.digitaloceanspaces.com/5ab64835bfc9e1de5aabe16337660a50/cursor.png");
+	}
+
+	@media (max-width: 768px) {
+		top: 10px;
+	}
+}

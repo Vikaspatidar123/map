@@ -1,0 +1,17 @@
+.main_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	margin: 0 auto;
+	background-color: aliceblue;
+}
+
+.search_box {
+	padding: 10px;
+}
+
+.search_icon {
+	margin-right: 4px;
+	font-size: 24px;
+}

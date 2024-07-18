@@ -1,0 +1,17 @@
+{
+	"/": {
+		"title": "CogoMaps - Shipment planner for all trades",
+		"description": "Plan your shipment at ease",
+		"keywords": "small and medium sized, Shipment planner, Shipping rates, Shipping options, Air shipping, Ocean shipping, Land shipping, International shipping, Domestic shipping, Freight shipping, Cargo shipping, Shipping calculator, Shipping estimator, Shipping costs, Transport options, Logistics planning, Shipping distances, Transit times, Transit options, Port-to-port shipping, Door-to-door shipping, Shipping quotes, Shipping comparison maps,  routes,  route planning, Save routes, "
+	},
+	"/trade-info": {
+		"title": "Trade Info - discover services around you",
+		"description": "View nearby logistic services",
+		"keywords": "Trade information,Location information,Port information,Airport information,Warehouse information,Seaports,Airports,Warehouse services,Live congestion,Port congestion,Logistics information,Free days,Detention and demurrage,Shipping lines,Cargo airlines,Transport services,Supply chain information,Location history,General information,Trade routes,Trade services,Customs information,Freight forwarders,Import/export information,Port access,Shipping schedules,Port facilities,Trade compliance"
+	},
+	"/global-routes": {
+		"title": "Global Routes - view global routes of all operators",
+		"description": "View and create global routes",
+		"keywords": "Global shipping routes,International shipping routes,Land transport routes,Ocean transport routes,Air transport routes,Shipping lines,Container shipping routes,Cargo shipping routes,Freight transport routes,Trucking routes,Haulage routes,Airline routes,International air routes,Domestic air routes,Cargo airlines,Shipping companies,Logistics providers,Supply chain routes,Global trade routes,Port networks,Shipping hubs,Shipping routes map,Global shipping connections,Custom shipping routes,Personalized shipping routes,Tailored shipping routes,Land transport routes,Ocean transport routes,Air transport routes,Freight transport routes,Cargo transport routes,Global shipping routes,International shipping routes,Shipping planner,Route planner,Transport planner,Shipping options,Transport options,Logistics planning,Supply chain planning,Port-to-port transport,Door-to-door transport,Shipping costs,Transport costs,Shipping distances,Transit times,Transit options,Shipping companies,Shipping lines,Cargo airlines"
+	}
+}

@@ -1,0 +1,57 @@
+/* stylelint-disable selector-class-pattern */
+.container {
+	--service-side-panel: 408px;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	margin-top: 56px;
+
+	:global {
+		.leaflet-tooltip {
+			width: 150px;
+			text-align: center;
+			white-space: normal !important;
+		}
+	}
+}
+
+.map_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 250ms ease;
+}
+
+.minimap_container {
+	top: 30px;
+	right: 30px;
+
+	:global {
+		.leaflet-container {
+			width: 120px !important;
+			height: 120px !important;
+			border-radius: 6px;
+			box-shadow: 0 0 8px #627fac33;
+		}
+
+		.leaflet-control {
+			display: none !important;
+		}
+	}
+}
+
+.close_icon {
+	position: absolute;
+	top: 124px;
+	right: 124px;
+	z-index: 1001;
+	width: 21px;
+	height: 21px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

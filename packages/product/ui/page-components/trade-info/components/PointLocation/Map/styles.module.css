@@ -1,0 +1,51 @@
+.tooltip_airport {
+	color: #ed1c24 !important;
+}
+
+.tooltip_seaport {
+	color: var(--color-service-ocean) !important;
+}
+
+.icon {
+	margin-left: 12px;
+}
+
+.icon:hover {
+	cursor: pointer;
+	fill: #ed1c24;
+}
+
+.heading_text {
+	font-size: 14px;
+	font-weight: 600;
+	color: #ed1c24;
+	filter: drop-shadow(12px 12px 100px #040202);
+}
+
+.legend {
+	position: absolute;
+	right: 2px;
+	bottom: 64px;
+	z-index: 999;
+	padding: 8px 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 8px #0402022e;
+
+	@media (max-width: 480px) {
+		right: 40px;
+		bottom: 18px;
+	}
+}
+
+.refresh_btn {
+	position: absolute;
+	top: 76px;
+	right: 10px;
+	z-index: 999;
+	box-shadow: 0 0 8px #0402022e;
+
+	@media (max-width: 480px) {
+		top: 10px;
+	}
+}

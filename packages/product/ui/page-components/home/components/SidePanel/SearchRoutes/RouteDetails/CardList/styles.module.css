@@ -1,0 +1,44 @@
+.container {
+	padding: 0 16px;
+}
+
+.more_btn {
+	padding: 8px 4px 0;
+	font-size: 12px;
+	font-weight: 400;
+	color: #404e65;
+	text-decoration: underline;
+	background: #fff;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.type_text {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: #221f20;
+}
+
+.type_icon {
+	width: 21px;
+	height: 21px;
+
+	&_air {
+		fill: #f37166;
+	}
+
+	&_ocean {
+		fill: #7278ad;
+	}
+}
+
+.header {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	padding: 0 4px 4px;
+}

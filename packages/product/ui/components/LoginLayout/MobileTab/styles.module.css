@@ -1,0 +1,48 @@
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 16px;
+	gap: 16px;
+	width: var(--layout-login-width);
+}
+
+.otp_label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 150%;
+	color: #221F20;
+}
+
+.otp_footer {
+	display: flex;
+	align-items: baseline;
+}
+
+.back_icon {
+	position: absolute;
+	top: -114px;
+	left: -105px;
+	fill: #000;
+	transition: all 250ms ease;
+
+	&:hover {
+		cursor: pointer;
+		transform: scaleX(1.15);
+	}
+}
+
+.loader_container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: var(--layout-login-width);
+	height: 156px;
+	padding-top: 36px;
+}
+
+.loader_submit {
+	position: absolute;
+	right: 20%;
+	scale: 0.5;
+}

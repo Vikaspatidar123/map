@@ -1,0 +1,152 @@
+.container {
+	position: relative;
+	height: calc(100% - 72px);
+}
+
+.flex_container {
+	position: sticky;
+	top: 0;
+	z-index: 1001;
+	width: 100%;
+	padding: 8px 16px 16px;
+	background-color: #fff;
+}
+
+.horizontal_line {
+	width: calc(100% + 32px);
+	height: 4px;
+	margin: 8px -16px 0;
+	clip-path: inset(0  0 -8px 0);
+	box-shadow: 0 0 8px #627fac33;
+}
+
+.bottom_container {
+	position: sticky;
+	top: calc(100vh - 80px);
+	bottom: 0;
+	display: flex;
+	gap: 16px;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 16px;
+	clip-path: inset(-4px  0 0 0);
+	background-color: #fff;
+	box-shadow: 0 0 4px #627fac1a;
+
+	&.column {
+		flex-direction: column;
+		gap: 12px;
+	}
+}
+
+.footer {
+	button {
+		margin-left: 16px;
+	}
+}
+
+.center_div {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50vh;
+	margin-top: 32px;
+	margin-left: 16px;
+	font-size: 16px;
+	font-weight: 500;
+	background-image: url("https://cogoport-testing.sgp1.digitaloceanspaces.com/158bab1b368e6a2b4082a4aeeea3dda8/Globe.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: move-image 4s linear infinite;
+}
+
+@keyframes move-image {
+	0% {
+		background-position: 50% 0%;
+	}
+
+	25% {
+		background-position: 60% 10%;
+	}
+
+	50% {
+		background-position: 50% 20%;
+	}
+
+	75% {
+		background-position: 40% 10%;
+	}
+
+	100% {
+		background-position: 50% 0%;
+	}
+}
+
+.header {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	padding: 0;
+}
+
+.back_btn {
+	width: 18px;
+	height: 18px;
+	fill: #696868;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.status_icon {
+	width: 34px;
+	height: 30px;
+	padding: 4px;
+
+	&.error {
+		fill: #ee3425;
+	}
+
+	&.success {
+		fill: var(--color-service-land);
+	}
+}
+
+.status_loader {
+	margin: 4px;
+	background: #88cad1;
+}
+
+.route_name_input {
+	--border-color: #e0e0e0;
+
+	margin-bottom: 0;
+	border: 1px solid var(--border-color);
+
+	:global {
+		.ui_input_suffix {
+			border-radius: 8px;
+		}
+	}
+}
+
+.signup_container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	padding: 36px;
+}
+
+.label_text {
+	margin-bottom: 4px;
+	margin-left: 8px;
+	font-size: 12px;
+	font-weight: 500;
+}

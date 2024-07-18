@@ -1,0 +1,31 @@
+.main_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 80px auto 0;
+}
+
+.heading_left_container {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.heading_right_container {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.setting_button {
+	margin-top: 7px;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.rotate_ninty_degree {
+	transition: 0.4s;
+	transform: rotate(30deg);
+}

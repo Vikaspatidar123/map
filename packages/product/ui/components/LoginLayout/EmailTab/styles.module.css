@@ -1,0 +1,25 @@
+.container {
+	width: var(--layout-login-width);
+}
+
+.sub_container {
+	padding-bottom: 8px;
+
+	:global {
+		.ui_input_suffix {
+			padding: 0 8px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.icon_open {
+	fill: #828282;
+}
+
+.icon_close {
+	fill: #a6a6a6;
+}

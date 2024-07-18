@@ -1,0 +1,13 @@
+.logout {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	width: 145px;
+	color: #ee3425;
+	background: #fff;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

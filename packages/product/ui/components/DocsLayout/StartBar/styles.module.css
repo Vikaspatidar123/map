@@ -1,0 +1,129 @@
+.container {
+	--layout-startbar: 230px;
+
+	position: fixed;
+	top: var(--layout-main-nav);
+	left: 0;
+	width: var(--layout-startbar);
+	height: calc(100vh - var(--layout-main-nav));
+	padding: 16px;
+	overflow-y: auto;
+	background-color: #fff;
+	border-right: 1px solid #dedede;
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	@media (max-width: 768px) {
+		left: calc(var(--layout-startbar) * -1);
+		z-index: 100000;
+		clip-path: inset(0 -20px 0  0);
+		border: none;
+		box-shadow: 0 4px 20px rgb(33 115 187 / 7%);
+
+		&.mobile_show {
+			left: 0;
+			transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+		}
+	}
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+.inner_container {
+	position: sticky;
+}
+
+.list_container {
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 16px;
+	list-style-type: none;
+}
+
+.list_item {
+	padding: 4px;
+	margin-bottom: 4px;
+	font-weight: 400;
+	border-radius: 4px;
+
+	p {
+		margin: 0;
+		font-weight: 500;
+		color: #2f0604;
+	}
+}
+
+.sublist_item {
+	padding: 2px;
+	margin-top: 4px;
+	margin-left: 12px;
+	border-radius: 4px;
+}
+
+.list_item, .sublist_item {
+	transition: all 0.2s;
+
+	a {
+		color: #2f0604;
+	}
+
+	a:hover {
+		color: var(--color-main-nav-secondary);
+		text-decoration: none;
+	}
+
+	&.active a {
+		color: var(--color-main-nav-primary);
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 4px 0;
+	margin-bottom: 4px;
+	font-weight: 400;
+	background-color: #fff;
+	border: none;
+	transition: all 0.2s;
+
+	&:hover {
+		color: var(--color-main-nav-secondary);
+		cursor: pointer;
+	}
+}
+
+.inner_list_container {
+	display: block;
+	max-height: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+	transition: all 0.2s;
+}
+
+.active_inner_list {
+	max-height: 400px;
+}
+
+.menu_icon {
+	width: 18px;
+	height: 18px;
+	padding: 2px;
+	vertical-align: -0.1rem;
+	border-radius: 50%;
+	transition: all 0.3s;
+
+	&:hover {
+		background: #fde9e7;
+	}
+}
+
+.active_icon {
+	transform: rotate(90deg);
+}

@@ -1,0 +1,33 @@
+.container {
+	width: 100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 350ms ease;
+
+	&.expanded {
+		max-height: 500px;
+	}
+}
+
+.line {
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	padding: 4px 0;
+	font-size: 12px;
+	color: #4f4f4f;
+}
+
+.label {
+	width: 30%;
+	font-weight: 400;
+}
+
+.value {
+	width: 70%;
+	font-weight: 500;
+}
